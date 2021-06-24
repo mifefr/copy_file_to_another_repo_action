@@ -1,4 +1,4 @@
-# copy_file_to_another_repo_action
+# copy_file_to_another_repo_action with LFS
 This GitHub Action copies a file from the current repository to a location in another repository
 
 # Example Workflow
