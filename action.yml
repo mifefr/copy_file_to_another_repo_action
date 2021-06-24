@@ -23,7 +23,10 @@ inputs:
     description: 'Destination branch to create for this commit'
     required: false
   commit_message:
-    description: 'A custom message for the commmit'
+    description: 'A custom message for the commit'
+    required: false
+  with_lfs:
+    description: 'Use git lfs'
     required: false
 runs:
   using: 'docker'
@@ -36,6 +39,7 @@ runs:
     - ${{ inputs.destination-branch }}
     - ${{ inputs.destination-branch-create }}
     - ${{ inputs.commit-message }}
+    - ${{ inputs.with-lfs }}
 branding:
   icon: 'git-commit'
   color: 'green'
